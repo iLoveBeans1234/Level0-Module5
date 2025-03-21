@@ -6,16 +6,16 @@ import turtle
 
 def draw_square(t):
     for i in range(4):
-        turtle.forward(150)
-        turtle.right(90)
+        t.forward(150)
+        t.right(90)
 
 def draw_circle(t):
-    turtle.circle(150)
+    t.circle(150)
 
 def draw_triangle(t):
     for i in range(3):
-        turtle.forward(150)
-        turtle.left(120)
+        t.forward(150)
+        t.left(120)
 
 
 if __name__ == '__main__':

@@ -14,7 +14,10 @@ if __name__ == '__main__':
         if number % i == 0:
             messagebox.showinfo(title="d", message=f"{number} is not prime because it is divisible by {i}.")
             quit()
-    messagebox.showinfo(title="d", message=f"{number} is prime.")
+    messagebox.showinfo(title="b", message=f"{number} is prime.")
+    #  2. Use a for loop, if statement, and mod
+    #         print(i)ulo to find if the number
+    #     is prime.title="d", message=f"{number} is prime.")
 
     #  2. Use a for loop, if statement, and mod
     #         print(i)ulo to find if the number

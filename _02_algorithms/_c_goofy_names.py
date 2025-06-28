@@ -7,6 +7,7 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     # TODO)
     #  1. Ask the user to enter their name.
+
     #  2. Use a loop to alternately modify each character of the name into
     #     uppercase and lowercase letters until a new "goofy" representation
     #     of their name has been constructed.

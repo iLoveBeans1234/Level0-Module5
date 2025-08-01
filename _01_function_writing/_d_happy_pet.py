@@ -20,7 +20,9 @@ def feedPet(pet):
     global happiness_level
     messagebox.showinfo(title="user", message=f"Your {pet} is very happy about getting fed!")
     happiness_level += 20
-
+def killPet(pet):
+    global happiness_level
+    messagebox.showinfo(title="user", message="NOOOOOOOOOOO! WHY DID YOU DO THAT??? YOU ARE THE EVILEST PERSON OF MANKIND!!!")
 if __name__== '__main__' :
     # TODO)
     #   1. Ask the user to enter the type of pet they want (give them a few
@@ -37,6 +39,9 @@ if __name__== '__main__' :
         if activity == "feed":
             feedPet(pet)
 
+        if activity == "kill":
+            killPet(pet)
+
 
     #   2. Use a loop (maybe a while loop?) to keep offering interactions with
     #      their pet until the desired pet happiness level has been reached.
@@ -49,4 +54,4 @@ if __name__== '__main__' :
             messagebox.showinfo(title="user", message=f"Your {pet} has reached the max happiness level!")
             exit()
         if happiness_level <= 0:
-            messagebox.showinfo(title="user", message=f"Your {pet} is very sad and will never do activities with you ever again!")
+            messagebox.showinfo(title="user", message=f"Your {pet} is dead because you did not make it happy.")

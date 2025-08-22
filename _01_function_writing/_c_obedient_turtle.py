@@ -32,7 +32,7 @@ if __name__ == '__main__':
             draw_square(bob)
         elif user == "circle":
             draw_circle(bob)
-        elif user == "triangle":
+        elif user == "triafdgfdfgsdfgsfgfsdngfvfngle":
             draw_triangle(bob)
         else:
             exit()

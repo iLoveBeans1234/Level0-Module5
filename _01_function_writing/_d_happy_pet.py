@@ -11,26 +11,26 @@ happiness_level = 50
 def walkPet(pet):
     global happiness_level
     if pet in ["dog", "cat", "guinea pig", "horse", "donkey"]:
-        messagebox.showinfo(title="user", message=f"Your {pet} is very happy about taking a walk!")
+        messagebox.showinfo(title="user", message=f"Your {pet} is happy.")
         happiness_level += 20
     if pet == "fish":
-        messagebox.showinfo(title="user", message=f"Your {pet} is not happy about taking a walk!")
+        messagebox.showinfo(title="user", message=f"Your {pet} is not happy.")
         happiness_level -= 20
 def feedPet(pet):
     global happiness_level
-    messagebox.showinfo(title="user", message=f"Your {pet} is very happy about getting fed!")
+    messagebox.showinfo(title="user", message=f"Your {pet} is happy.")
     happiness_level += 20
 def killPet(pet):
     global happiness_level
-    messagebox.showinfo(title="user", message="NOOOOOOOOOOO! WHY DID YOU DO THAT??? YOU ARE THE EVILEST PERSON OF MANKIND!!!")
+    messagebox.showinfo(title="user", message="Thank you for killing your pet. It looked very ugly.")
 if __name__== '__main__' :
     # TODO)
     #   1. Ask the user to enter the type of pet they want (give them a few
     #      choices).
-    pet = simpledialog.askstring(title="user", prompt="What pet do you want? Dog, cat, fish, guinea pig, horse, donkey?")
+    pet = simpledialog.askstring(title="user", prompt="What pet do u want? Dog, cat, fish, guinea pig, horse, or donkey?")
 
     while True:
-        activity = simpledialog.askstring(title="user", prompt=f"What activity would you like your pet to do? Currently your pet is {happiness_level}/100")
+        activity = simpledialog.askstring(title="user", prompt=f"What activity would u like ur pet to do? Happiness = {happiness_level}/100")
         if activity == None or activity == '':
             exit()
         if activity == "walk":
@@ -51,7 +51,7 @@ if __name__== '__main__' :
     #      level by a different amount, depending on the kind of pet they
     #      have. For example, a fish might not enjoy a walk!
         if happiness_level >= 100:
-            messagebox.showinfo(title="user", message=f"Your {pet} has reached the max happiness level!")
+            messagebox.showinfo(title="user", message=f"Ur {pet} is at da max happinezzzzzzz.")
             exit()
         if happiness_level <= 0:
-            messagebox.showinfo(title="user", message=f"Your {pet} is dead because you did not make it happy.")
+            messagebox.showinfo(title="user", message=f"Ur {pet} is so stupid because it are not happy.")

@@ -8,7 +8,7 @@ root.withdraw()
 if __name__ == '__main__':
     # TODO)
     #  1. Ask the user to enter their name.
-    name = simpledialog.askstring(title="user", prompt="What is your full name?")
+    name = simpledialog.askstring(title="user", prompt="Wat iz ur name?")
     for i in range(len(name)):
        # print( name[i]  )
         if i % 2 == 0:
